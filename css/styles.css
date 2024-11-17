@@ -1,0 +1,512 @@
+/* ESTILOS GENERALES */
+html, body {
+  height: 100%
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.09rem
+}
+/* Modificar el modelo de cajas de CSS */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box
+}
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit
+}
+/* Resetear márgenes y padding */
+* {
+  margin: 0;
+  padding: 0
+}
+/* Centrar elementos en pantalla */
+.container {
+  width: 90%;
+  max-width: 1366px;
+  margin: 0 auto
+}
+/* Esilos de los textos */
+h2 {
+font-size: 1.45rem;
+margin-bottom: 20px;
+}
+p {
+line-height: 1.8;
+padding-right: 1em;
+margin-bottom: 25px;
+}
+/* Estilos de los botones */
+.btn {
+	display: block;
+	background-color: #131311;
+	width: 250px;
+	padding: 12px 1em;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #000;
+}
+.transparent {
+display: inline-block;
+border: 1px solid #ffa600;
+padding: 12px 1em;
+width: 250px;
+text-align: center;
+text-decoration: none;
+color: #000;
+}
+.transparent:hover {
+background-color: #ffa600;
+color: #fff
+}
+
+/* BARRA DE NAVEGACIÓN */
+#navbar {
+background-color: #ffffff;
+}
+#navigation {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+#navigation a img {
+	width: 195px;
+	margin: 14px 0 0;
+}
+#main-nav {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+list-style: none;
+font-family: 'Lato', sans-serif;
+}
+#main-nav li a {
+	color: #000000;
+	text-decoration: none;
+	padding: 25px 0.9em 0;
+	display: inline-block;
+}
+/* Estilos de la barra de navegación en menú movil */
+#navbar-toggle {
+color: #000000;
+font-size: 1.5rem;
+position: absolute;
+top: 29px;
+right: 35px;
+display: none;
+}
+/* Aplicar estilos al enlace de la página actual */
+.active {
+	color: #1dd058 !important;
+	font-weight: bold;
+}
+/* Ventana modal */
+#modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+#modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  width: 396px;
+}
+#register, #recoverPassword {
+	display: block;
+	color: #000;
+	padding: 6px 0;
+	text-decoration: none;
+}
+/* Sección 1 */
+article#home > section:nth-child(1) {
+  background-image: linear-gradient(rgba(93, 255, 188, 0.64), rgba(0, 0, 0, 0.9)), url(../images/hero-bcg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover
+  }
+  #seccionPrimera {
+  height: 100%;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  }
+  #seccionPrimera h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: arial, verdana, sans-serif;
+  }
+  #seccionPrimera p {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 15px 0;
+  margin-bottom: 0;
+  }
+  #seccionPrimera div {
+  text-align: center;
+  }
+  #seccionPrimera a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid;
+  display: inline-block;
+  padding: 12px 2.5em;
+  margin: 12px 0 0;
+  }
+  #seccionPrimera a:hover {
+  background-color: #aeaeae;
+  color: #000;
+  }
+/* PIE DE PÁGINA */
+footer {
+background-color: #121018;
+}
+#piedDePagina {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+padding: 30px 0;
+}
+footer h3 {
+color: #9f9f9f;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+footer ul {
+margin: 20px 0;
+}
+footer li {
+list-style: none;
+padding: 5px 0;
+}
+footer ul li a {
+color: #9f9f9f;
+text-decoration: none;
+font-size: 0.88rem;
+}
+footer a img {
+width: 160px;
+}
+#social {
+text-align: center;
+}
+#social .fab {
+color: #fff;
+margin-left: 1em;
+font-size: 1.3rem;
+}
+#copyright {
+color: #9f9f9f;
+text-align: center;
+font-size: 0.8rem;
+border-top: 1px solid #272323;
+padding: 12px 0;
+}
+
+/* ESTILOS DE LA PÁGINA DE INICIO */
+article section:nth-child(2), article section:nth-child(3), article section:nth-child(4) {
+	text-align: center;
+	padding: 23px 0;
+	height: 500px;
+}
+
+article section:nth-child(3) {
+	background-color: #f7f7f7;
+}
+
+h2 {
+	font-size: 2rem;
+	padding: 16px 0;
+	margin: 0;
+}
+/* ESTILOS DE LAS PÁGINAS */
+main header {
+background-color: #f3f1fe;
+padding: 45px 0;
+margin-bottom: 40px;
+}
+main header h1 {
+font-size: 1.9rem;
+color: #000;
+text-transform: uppercase;
+}
+#pages {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+margin-bottom: 80px;
+}
+#pages section {
+-ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
+}
+aside {
+-ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+}
+#pages section {
+-ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
+padding-right: 1em;
+text-align: justify;
+margin-bottom: 30px;
+}
+aside h3 {
+background-color: #f3f1fe;
+padding: 12px 0 12px 0.5em;
+margin-bottom: 20px;
+font-size: 1.20rem;
+font-weight: 100;
+}
+aside ul {
+list-style: none;
+margin: 0 0 30px 0.5em;
+}
+aside ul li a {
+text-decoration: none;
+line-height: 1.8;
+color: #0b1245;
+}
+aside ul li a:hover {
+text-decoration: underline
+}
+#socialMedia {
+margin: 0 0 25px 0.5em;
+font-size: 2.5rem;
+}
+#socialMedia i {
+	margin-right: 0.8em;
+	color: #008000;
+}
+#boletin {
+margin-left: 0.5em;
+}
+#boletin p {
+font-size: 1rem;
+margin-bottom: 12px;
+}
+#boletin label {
+display: block;
+font-size: 0.95rem;
+font-weight: bold;
+margin-bottom: 12px;
+}
+input#correo {
+display: block;
+width: 100%;
+height: 45px;
+margin-bottom: 12px;
+}
+#boletin input[type="submit"] {
+	background-color: #323232;
+	display: inline-block;
+	padding: 10px 1em;
+	color: #fff;
+	border: none;
+	width: 150px;
+	font-size: 0.95rem;
+}
+form {
+margin-right: 1em;
+}
+.asterisco {
+color: #ff0000;
+}
+label {
+display: block;
+margin: 10px 0;
+font-size: 0.98rem;
+}
+input[type="text"], input[type="email"],  input[type="password"]{
+display: inline-block;
+width: 100%;
+height: 45px;
+margin: 5px 0;
+border: 1px solid #ccc;
+}
+textarea#comentario {
+width: 100%;
+border: 1px solid #ccc;
+margin-bottom: 30px;
+}
+input[type="submit"] {
+	background-color: #008000;
+	display: inline-block;
+	padding: 10px 1em;
+	width: 100%;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+	margin: 0px 0 21px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1199px) {
+body {
+  font-size: 0.95rem
+}   	
+}
+/* Aplicar los siguientes estilos cuando el viewport tenga un tamaño que oscile entre 960px -1199px  */
+@media screen and (max-width: 1024px) {
+
+#seccionPrimera h1 {
+  font-size: 2.5rem;
+}
+#seccionPrimera p {
+  font-size: 1.25rem;
+}
+h2 {
+  font-size: 1.3rem;
+}
+#seccionTercera {
+  display: none;
+}
+#seccionCuarta {
+	/* display: -webkit-box; */
+	/* display: -ms-flexbox; */
+	display: flex;
+	margin: 80px auto;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#pages .row:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.transparent {
+  margin-bottom: 30px;
+}
+#navbar-toggle {
+  display: block;
+}
+#modal-content {
+	top: 35%;
+  width: 281px;
+}
+}
+/* Aplicar los siguientes estilos cuando el tamaño del viewport sea igual o menor que 959px */
+@media screen and (max-width: 959px) {
+#navigation {
+  display: block;
+}	
+#main-nav {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}	
+#navbar-toggle {
+  display: block;
+}
+#modal-content {
+	top: 35%;
+  width: 281px;
+}
+#main-nav li a {
+  display: block;
+  padding: 20px 1em;
+}
+#main-nav li:not(:last-child) {
+  border-bottom: 1px solid #353535;
+}
+/* Estilos de la página de inicio */
+#seccionPrimera h1 {
+  font-size: 2.5rem;
+}
+#seccionPrimera p {
+  font-size: 1.25rem;
+}
+#seccionSegunda, #seccionTercera, #seccionCuarta, #seccionQuinta {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#seccionSegunda div, #seccionTercera div {
+  padding: 0;
+  -ms-flex-item-align: normal;
+      -ms-grid-row-align: normal;
+      align-self: normal;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+}
+.btn, .transparent {
+  width: 100%;
+}
+.transparent {
+  margin-bottom: 20px;
+}
+#seccionSegunda img, #seccionTercera img {
+  display: none;
+}
+#seccionTercera.container {
+  width: 90%;
+  padding: 20px 0;
+}
+article > section:nth-child(4) {
+  padding: 35px 0 12px 0;
+}
+#seccionCuarta {
+  margin: 35px auto;
+}
+#seccionQuinta {
+  text-align: center;
+}
+/* Estilos del resto de las páginas */
+#pages section {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-right: 0;
+}
+aside {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+#pages .row:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+}
+/* Aplicar los siguientes estilos cuando el tamaño del viewport sea igual o menor que 659px */
+@media screen and (max-width: 659px) {	
+#piedDePagina {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+}

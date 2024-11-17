@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto navbar</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="navigation" class="container">
+                <a href="index.html"><img src="images/logo.png" alt="Logotipo"></a>
+                <span id="navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>                
+                <ul id="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#" id="login-register"><i class="fa-regular fa-user"></i> Login/Registrarse</a></li>
+                </ul>
+            </div>      
+        </nav>
+    </header>
+     <!-- Cuerpo del documento -->
+    <main>
+        <header>
+            <div class="container">
+                <h1>Servicios</h1>
+            </div>
+        </header>
+        <article id="pages" class="container">
+            <section>
+                <p>Lorem ipsum sit, amet consectetur adipisicing elit.
+                Rerum nobis perferendis magnam tenetur, nesciunt est repellendus
+                iure excepturi neque dignissimos voluptatibus repudiandae
+                nostrum reprehenderit quisquam molestias quia ducimus emque
+                quo?</p>
+
+                <p>Possimus consectetur culpa odio in quod delectus reiciendis
+                porro esse? Placeat officiis vero culpa consequuntur commodi!
+                Asperiores, commodi animi consequuntur laudantium vitae,
+                necessitatibus magni e atque eius em, eos minus?</p>
+                <p>Voluptatibus pariatur quod illum? Numquam, nesciunt! Officiis
+                deleniti earum ducimus  unde, aperiam, sunt ipsa atque
+                voluptatum cupiditate consequuntur! Non odio cumque iure
+                similique aliquid. Fugit id beatae velit nostrum?</p>
+
+                <p>Lorem ipsum  sit amet consectetur adipisicing elit. Ea
+                inventore es accusamus veniam reprehenderit recusandae, eos
+                quam perferendis voluptas totam dicta est rerum similique quod
+                unde vitae iste sed voluptatibus.</p>
+                <p>Laborum eum aspernatur amet sapiente. Quo cumque sit nemo,
+                similique ipsam exercitationem? Pariatur porro magnam, atque
+                amet voluptate quas ut et aliquam officia sed vitae animi ex
+                consectetur? Impedit, magni!</p>
+                <p>Tempora sit nesciunt nisi, fugit rem beatae. Fuga, autem
+                emque accusamus libero ullam aspernatur vero suscipit
+                cupiditate qui officia sunt vitae. Reiciendis iure ab autem
+                deleniti at consectetur quia nostrum?</p>
+            </section>
+            <aside>
+                <h3>Redes sociales</h3>
+                <div id="socialMedia">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+                <h3>Newsletter</h3>
+                <div id="boletin">
+                    <p>Ingrese su dirección de correo electrónico para recibir
+                    actualizaciones</p>
+
+                    <form action="" method="POST">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" name="email" id="correo">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </aside>
+        </article>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <div id="piedDePagina" class="container">
+            <div>
+                <h3>Corporativo</h3>
+                <ul>
+                    <li><a href="socios.html">Socios</a></li>
+                    <li><a href="empleos.html">Trabaja con nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="condiciones.html">Términos y condiciones</a></li>
+                    <li><a href="privacidad.html">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="index.html"><img src="images/logo.png" alt="Logotipo"></a>
+                <div id="social">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            &copy;<span id="date"></span>. Explore. Todos los derechos reservados
+        </div>
+    </footer>    
+    <!-- Ventana modal -->
+    <div id="modal-container">
+        <div id="modal-content">
+            <h2>Iniciar sesión</h2>
+         <form action="#" novalidate>
+            <label for="fnombre">Usuario:</label>
+            <input type="text" name="fnombre" id="fnombre">
+            <br>
+            <label for="fpsw">Contraseña:</label>
+            <input type="password" name="fpsw" id="fpsw">
+            <br><br>
+            <input type="submit" id="fsubmit" value="Iniciar sesión">
+            <br>
+            <small><a href="#" id="register">Crear una cuenta</a></small>
+            <small><a href="#" id="recoverPassword">Recuperar contraseña</a></small>
+         </form>
+        </div>
+      </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

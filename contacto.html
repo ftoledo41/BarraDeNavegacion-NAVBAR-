@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto navbar</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="navigation" class="container">
+                <a href="index.html"><img src="images/logo.png" alt="Logotipo"></a>
+                <span id="navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>                
+                <ul id="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#" id="login-register"><i class="fa-regular fa-user"></i> Login/Registrarse</a></li>
+                </ul>
+            </div>      
+        </nav>
+    </header>
+     <!-- Cuerpo del documento -->
+    <main>
+        <header>
+            <div class="container">
+                <h1>Contacto</h1>
+            </div>
+        </header>
+        <article id="pages" class="container">
+            <section>
+                <h2>Formulario de contacto</h2>
+                <p>Para comunicarse con nosotros rellene el siguiente
+                formulario. <br>Campos marcados con asterisco <span
+                class="asterisco">(*)</span> son requeridos.</p>
+
+                <form action="" method="POST">
+                    <label for="nombre">Nombre<span class="asterisco">*</span>:</label>
+                    <input type="text" id="nombre" required>
+
+                    <label for="apellido">Apellido<span class="asterisco">*</span>:</label>
+                    <input type="text" id="apellido" required>
+
+                    <label for="email">Correo electrónico<span class="asterisco">*</span>:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="telefono">Teléfono<span class="asterisco">*</span>:</label>
+                    <input type="text" id="telefono" required>
+
+                    <label for="movil">Telefono móvil:</label>
+                    <input type="text" id="movil">
+
+                    <label for="comentario">Díganos cómo podemos ayudarlo<span class="asterisco">*</span>:</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" required></textarea>
+
+                    <input type="submit" value="Enviar formulario">
+                </form>
+            </section>
+            <aside>
+                <h3>Redes sociales</h3>
+                <div id="socialMedia">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+                <h3>Newsletter</h3>
+                <div id="boletin">
+                    <p>Ingrese su dirección de correo electrónico para recibir
+                    actualización sobre temas legales</p>
+
+                    <form action="">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" name="email" id="correo">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </aside>
+        </article>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <div id="piedDePagina" class="container">
+            <div>
+                <h3>Corporativo</h3>
+                <ul>
+                    <li><a href="socios.html">Socios</a></li>
+                    <li><a href="empleos.html">Trabaja con nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="condiciones.html">Términos y condiciones</a></li>
+                    <li><a href="privacidad.html">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="index.html"><img src="images/logo.png" alt="Logotipo"></a>
+                <div id="social">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            &copy;<span id="date"></span>. Explore. Todos los derechos reservados
+        </div>
+    </footer>
+    <!-- Ventana modal -->
+    <div id="modal-container">
+        <div id="modal-content">
+            <h2>Iniciar sesión</h2>
+         <form action="#" novalidate>
+            <label for="fnombre">Usuario:</label>
+            <input type="text" name="fnombre" id="fnombre">
+            <br>
+            <label for="fpsw">Contraseña:</label>
+            <input type="password" name="fpsw" id="fpsw">
+            <br><br>
+            <input type="submit" id="fsubmit" value="Iniciar sesión">
+            <br>
+            <small><a href="#" id="register">Crear una cuenta</a></small>
+            <small><a href="#" id="recoverPassword">Recuperar contraseña</a></small>
+         </form>
+        </div>
+      </div>
+    <script src="js/app.js"></script>    
+</body>
+</html>
